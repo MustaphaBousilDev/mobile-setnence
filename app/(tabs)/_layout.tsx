@@ -1,7 +1,7 @@
 import { Tabs } from "expo-router";
 import React from "react";
 import Ionicons from "@expo/vector-icons/Ionicons";
-import COLORS from "@/constants/Colors";
+import COLORS from "@/constants";
 import { Provider } from "react-redux";
 import { store } from "@/redux/store";
 export default function Page() {

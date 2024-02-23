@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Text, View, StyleSheet, Image ,ImageBackground } from "react-native";
-import Header from "@/components/header";
-import COLORS from "@/constants/Colors";
-import Leagues from "@/components/Leagues";
-import MatchLive from "@/components/matchLive";
+import Header from "@/components/Header";
+import COLORS from "@/constants";
+import Leagues from "@/components/League";
+import MatchLive from "@/components/Live";
 import Ionicons from "@expo/vector-icons/Ionicons";
 
 export default function two() {

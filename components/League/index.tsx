@@ -8,21 +8,21 @@ import {
   TouchableOpacity,
 } from "react-native";
 import LeagueItem from "./League";
-// import { useLeaguesQuery } from "@/redux/service/Leagues/leagueApi";
+import { useLeaguesQuery } from "@/redux/service/League.service";
 
 export default function Leagues() {
   const [leagues, setLeagues] = useState([]);
-  // const { isLoading, isSuccess, data, refetch } = useLeaguesQuery("");
+  const { isLoading, isSuccess, data, refetch } = useLeaguesQuery("");
 
-  // useEffect(() => {
-  //   if (isSuccess) {
-  //     setLeagues(data.data);
-  //   }
-  // });
+  useEffect(() => {
+    if (isSuccess) {
+      setLeagues(data.data);
+    }
+  });
 
-  // useEffect(() => {
-  //   refetch();
-  // }, []);
+  useEffect(() => {
+    refetch();
+  }, []);
 
   return (
     <View
@@ -49,6 +49,8 @@ export default function Leagues() {
         )}
       />
     </View>
+
+    
   );
 }
 

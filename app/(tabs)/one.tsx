@@ -1,6 +1,6 @@
-import Header from "@/components/header";
-import Icons from "@/components/icons";
-import COLORS from "@/constants/Colors";
+import Header from "@/components/Header";
+import Icons from "@/components/Icons";
+import COLORS from "@/constants";
 import { Link } from "expo-router";
 import React from "react";
 import {

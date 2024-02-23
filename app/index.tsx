@@ -1,7 +1,7 @@
 import { View, Text, Image, StyleSheet, ImageBackground } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
-import COLORS from "@/constants/Colors";
-import Button from "@/components/button";
+import COLORS from "@/constants";
+import Button from "@/components/Buttons";
 import { Link, router } from "expo-router";
 
 export default function Page() {

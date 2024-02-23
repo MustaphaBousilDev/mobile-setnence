@@ -1,5 +1,5 @@
-import Header from "@/components/header";
-import COLORS from "@/constants/Colors";
+import Header from "@/components/Header";
+import COLORS from "@/constants";
 import { Link } from "expo-router";
 import React from "react";
 import {
