@@ -30,9 +30,15 @@ export default function MatchLiveItem({ match }: any) {
             }}
           >
             <Text style={{ color: COLORS.white, fontSize: 15 }}>
-              UEFA champions league
+              {
+                match.name
+              }
             </Text>
-            <Text style={{ color: COLORS.white, fontSize: 15 }}>Groupe A</Text>
+            <Text style={{ color: COLORS.white, fontSize: 15 }}>
+              date: {
+                match.starting_at
+              }
+            </Text>
           </View>
           <View
             style={{

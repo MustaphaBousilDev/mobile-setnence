@@ -1,13 +1,13 @@
 import { ApiFootball } from "../api/api";
 export const authApi = ApiFootball.injectEndpoints({
   endpoints: (builder) => ({
-    fixtures: builder.query({
+    filters: builder.query({
       query: () => ({
-        url: `fixtures?filters=todayDate`,
+        url: `fixtures?include=participants;venue&filters=todayDate`,
         method: "GET",
       }),
     }),
   }),
 });
 
-export const { useFixturesQuery } = authApi;
+export const { useFiltersQuery } = authApi;

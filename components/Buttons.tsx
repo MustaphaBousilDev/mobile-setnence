@@ -8,6 +8,7 @@ const CustomButton = (props:any) => {
   const textColor = props.filled ? COLORS.blueman : COLORS.white;
   return (
     <TouchableOpacity
+      testID="custom-button"
       style={{
         ...styles.button,
         ...{ backgroundColor: bgColor },

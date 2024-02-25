@@ -1,8 +1,22 @@
 import { View, FlatList, Text, Image, TouchableOpacity } from "react-native";
 import MatchLiveItem from "./Live";
-
-
+import { useFiltersQuery } from "@/redux/service/Live.service";
+import { useEffect, useState } from "react";
 export default function MatchLive() {
+  const { isLoading, data, isSuccess, isFetching, refetch } =
+    useFiltersQuery("");
+    const [matchs, setMatchs] = useState<any>([]);
+    useEffect(() => {
+      if (isSuccess) {
+        setMatchs(data.data);
+      }
+    }, [isFetching]);
+  
+    useEffect(() => {
+      refetch();
+    }, []);
+    console.log('####################')
+    console.log(matchs[1]);
   const leagues = [
     {
       data: [
@@ -104,7 +118,7 @@ export default function MatchLive() {
   return (
     <View>
       <FlatList
-        data={leagues[0].data}
+        data={matchs}
         horizontal={true}
         showsHorizontalScrollIndicator={true}
         renderItem={({ item }) => (
