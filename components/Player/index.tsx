@@ -19,13 +19,14 @@ export default function Players() {
           style={{
             flex: 1,
             top: "10%",
-            backgroundColor: COLORS.transparent,
+            backgroundColor: COLORS.black,
             borderTopLeftRadius: 10,
+           
             borderTopRightRadius: 10,
-            height: "auto",
+            
           }}
         >
-          <View style={{ padding: 5, margin: 5 }}>
+          <View style={{ padding: 10, margin: 5 }}>
             <TouchableOpacity onPress={() => setModalVisible(false)}>
               <Ionicons
                 size={30}
@@ -41,16 +42,17 @@ export default function Players() {
                 flexDirection: "column",
                 alignItems: "center",
                 width: "95%",
-                height: "60%",
+                height:300,
                 borderColor: COLORS.white,
                 borderWidth: 1,
                 marginRight: 10,
                 marginLeft: 10,
+                
                 borderRadius: 20,
                 marginTop: 10,
               }}
             >
-              <View>
+              <View style={{padding:10}}>
                 <Image
                   source={{
                     uri: playerDetails?.image_path,
@@ -59,13 +61,13 @@ export default function Players() {
                     width: 60,
                     height: 60,
                     borderRadius: 60,
-                    marginTop: 30,
+                    marginTop: 20,
                   }}
                 />
               </View>
-              <View>
+              <View style={{padding:10}}>
                 <Text
-                  style={{ marginTop: 20, fontSize: 15, color: COLORS.white }}
+                  style={{ marginTop: 10, fontSize: 15, color: COLORS.white }}
                 >
                   {playerDetails?.position?.name
                     ? playerDetails?.position?.name
@@ -181,7 +183,7 @@ export default function Players() {
   return (
     <View>
       {players && players ? (
-        players.map((item: any,index:any) => (
+        players.map((item: any,index:number) => (
           <TouchableOpacity
             key={index}
             onPress={async () => {

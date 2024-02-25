@@ -15,11 +15,12 @@ export default function Players() {
       <ScrollView
         style={{
           marginBottom: 65,
+          backgroundColor:COLORS.gray
         }}
       >
         <View
           style={{
-            backgroundColor: COLORS.blueman,
+            backgroundColor: COLORS.black,
             width: "100%",
             height: 100,
             borderBottomRightRadius: 20,
@@ -53,7 +54,7 @@ export default function Players() {
           >
             <Text
               style={{
-                color: COLORS.blueman,
+                color: COLORS.blackPrimary,
                 fontWeight: "600",
                 fontSize: 20,
               }}

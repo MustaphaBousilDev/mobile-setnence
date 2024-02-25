@@ -59,6 +59,7 @@ export default function Matchs() {
             borderTopLeftRadius: 10,
             borderTopRightRadius: 10,
             height: "100%",
+            width:"100%"
           }}
         >
           <View style={{ padding: 5, margin: 5 }}>
@@ -76,9 +77,10 @@ export default function Matchs() {
               flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
-              marginLeft: 5,
-              width:"100%",
+              marginLeft: "1%",
+              width:"98%",
               marginRight: 5,
+              // backgroundColor:"blue"
             }}
           >
             <View
@@ -86,7 +88,7 @@ export default function Matchs() {
                 padding: 5,
                 alignItems: "center",
                 justifyContent: "center",
-                margin: 5,
+                // margin: 5,
                 width: "100%",
                 height: 200,
                 marginTop: 10,
@@ -102,6 +104,7 @@ export default function Matchs() {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
+                    
                     padding: 10,
                   }}
                 >
@@ -119,6 +122,7 @@ export default function Matchs() {
                     alignItems: "center",
                     width: "100%",
                     padding: 10,
+                    
                   }}
                 >
                   <View
@@ -126,6 +130,7 @@ export default function Matchs() {
                       display: "flex",
                       justifyContent: "center",
                       alignItems: "center",
+                      
                     }}
                   >
                     <Image
@@ -159,12 +164,13 @@ export default function Matchs() {
             </View>
             <View
               style={{
-                borderColor: "red",
+                borderColor: COLORS.greyDark,
                 borderWidth: 1,
                 width: "100%",
-                borderRadius: 20,
+                backgroundColor:COLORS.greyDark,
+                borderRadius: 10,
                 padding: 15,
-                marginTop: 20,
+                marginTop: 10,
               }}
             >
               {matchDetails.participants.map((i: any, a:any) => (
@@ -178,7 +184,7 @@ export default function Matchs() {
                   >
                     <Text
                       style={{
-                        color: "red",
+                        color: "#fff",
                         fontSize: 15,
                         textAlign: "center",
                       }}
@@ -237,7 +243,7 @@ export default function Matchs() {
           <MatchItem match={match} favorite={true} />
         </TouchableOpacity>
       ))}
-      <View>{model()}</View>
+      <View style={{width:"100%"}}>{model()}</View>
     </View>
   );
 }
@@ -256,5 +262,6 @@ const styles = StyleSheet.create({
   container: {
     borderRadius: 10,
     overflow: "hidden",
+    backgroundColor:COLORS.greyDark,
   },
 });

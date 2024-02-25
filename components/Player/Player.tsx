@@ -11,7 +11,7 @@ export default function PlayersItem({ player }: any) {
           alignItems: "center",
           width: "95%",
           height: 150,
-          backgroundColor: COLORS.blueman,
+          backgroundColor: COLORS.greyDark,
           marginRight: 10,
           marginLeft: 10,
           borderRadius: 20,
@@ -84,27 +84,7 @@ export default function PlayersItem({ player }: any) {
             marginTop: 10,
           }}
         ></View>
-        <View
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-around",
-            width: "100%",
-          }}
-        >
-          <Text style={{ marginTop: 10, fontSize: 15, color: COLORS.white }}>
-            Gender{" : "}
-            {player.gender}
-          </Text>
-          <Text style={{ marginTop: 10, fontSize: 15, color: COLORS.white }}>
-            Weight{" : "}
-            {player.weight}
-          </Text>
-          <Text style={{ marginTop: 10, fontSize: 15, color: COLORS.white }}>
-            Height{" : "}
-            {player.weight}
-          </Text>
-        </View>
+        
       </View>
     </View>
   );
