@@ -24,29 +24,31 @@ export default function home() {
 
       <View
         style={{
-          backgroundColor: COLORS.blueman,
+          backgroundColor: COLORS.greyDark,
           width: "100%",
-          height: 200,
+          height: 300,
         }}
       >
         <View
           style={{
             position: "absolute",
-            top: "20%",
-            width: "80%",
-            left: "10%",
-            borderRadius: 20,
+            top: "2%",
+            width: "96%",
+            height:250,
+            left: "2%",
+            borderRadius: 10,
             overflow: "hidden",
           }}
         >
           <ImageBackground
-            source={require("@/assets/images/yy.png")}
+            source={require("@/assets/images/football/ligue2.jpg")}
             style={{
               opacity: 0.9,
               shadowColor: COLORS.dark,
+              height:400,
               shadowOffset: {
-                width: 100,
-                height: 200,
+                width: 200,
+                height: 300,
               },
               shadowOpacity: 1,
               shadowRadius: 10,
@@ -56,23 +58,13 @@ export default function home() {
             <Image
               style={{
                 width: 260,
-                height: 200,
+                height: 250,
                 position: "relative",
                 top: 40,
                 left: "20%",
               }}
-              source={require("@/assets/images/player.png")}
+              source={require("@/assets/messi-removebg-preview.png")}
               resizeMode="cover"
-            />
-            <Image
-              style={{
-                width: 30,
-                height: 40,
-                position: "absolute",
-                top: 80,
-                left: "26%",
-              }}
-              source={require("@/assets/images/ball1.png")}
             />
             <View
               style={{
@@ -85,6 +77,7 @@ export default function home() {
                 style={{
                   fontSize: 20,
                   fontWeight: "bold",
+                  color:"#fff"
                 }}
               >
                 LET'S GO!
@@ -94,19 +87,21 @@ export default function home() {
                   fontSize: 15,
                   fontWeight: "bold",
                   width: 150,
+                  color:"#fff"
                 }}
               >
-                You're competing in Season 1's Monhly Qualifier!
+                For Playing Again !?
               </Text>
             </View>
           </ImageBackground>
         </View>
-        <View
+        <ScrollView
           style={{
-            backgroundColor: COLORS.redop,
+            backgroundColor: "#4b5563",
             position: "absolute",
             width: "100%",
-            height: 630,
+            minHeight: 830,
+            overflow:'scroll',
             top: 150,
             borderRadius: 20,
             zIndex: -1,
@@ -304,7 +299,7 @@ export default function home() {
               </View>
             </View>
           </View>
-        </View>
+        </ScrollView>
       </View>
     </View>
   );

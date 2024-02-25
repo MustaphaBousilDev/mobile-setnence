@@ -14,7 +14,7 @@ export const BaseQuery = fetchBaseQuery({
   credentials: "include",
 });
 
-export const ApiSuccer = createApi({
+export const ApiFootball = createApi({
   baseQuery: BaseQuery,
   endpoints: (builder) => ({}),
 });

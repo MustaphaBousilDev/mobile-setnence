@@ -7,7 +7,7 @@ const header = () => {
   return (
     <View
       style={{
-        backgroundColor: COLORS.blueman,
+        backgroundColor: COLORS.blackPrimary,
         height: 60,
         display: "flex",
         flexDirection: "row",

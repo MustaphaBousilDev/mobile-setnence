@@ -11,6 +11,7 @@ export default function LeagueItem({ league }: any) {
         margin: 5,
         width: 100,
         height: 100,
+        backgroundColor:COLORS.greyDark,
         marginTop: 10,
         borderRadius: 10,
         borderColor: COLORS.white,

@@ -1,5 +1,5 @@
-import { ApiSuccer } from "../api/api";
-export const authApi = ApiSuccer.injectEndpoints({
+import { ApiFootball } from "../api/api";
+export const authApi = ApiFootball.injectEndpoints({
   endpoints: (builder) => ({
     leagues: builder.query({
       query: () => ({

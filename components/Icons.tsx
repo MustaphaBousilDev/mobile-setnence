@@ -5,16 +5,16 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 export default function icons() {
   const leagues = [
     {
-      image: require("@/assets/images/basket.png"),
+      image: require("@/assets/images/logo/english.jpg"),
     },
     {
-      image: require("@/assets/images/ff.png"),
+      image: require("@/assets/images/logo/europe.png"),
     },
     {
-      image: require("@/assets/images/tenis.png"),
+      image: require("@/assets/images/logo/morroco.png"),
     },
     {
-      image: require("@/assets/images/voly.png"),
+      image: require("@/assets/images/logo/ligue.jpg"),
     },
   ];
   return (
@@ -30,17 +30,17 @@ export default function icons() {
           <View
             key={index}
             style={{
-              padding: 5,
+              padding: 1,
               alignItems: "center",
               justifyContent: "center",
               margin: 1,
-              width: 80,
+              width: 70,
               height: 70,
-              borderRadius: 10,
+              borderRadius: "50%",
               borderColor: COLORS.white,
               backgroundColor: COLORS.white,
               opacity: 0.8,
-              borderWidth: 1,
+              borderWidth: 0,
               shadowColor: COLORS.dark,
                 shadowOffset: {
                     width: 100,

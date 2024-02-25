@@ -3,7 +3,7 @@ import { View, Text, Image } from "react-native";
 
 export default function PlayersItem({ player }: any) {
   return (
-    <View key={player.id}>
+    <View>
       <View
         style={{
           display: "flex",
@@ -27,7 +27,7 @@ export default function PlayersItem({ player }: any) {
         >
           <View>
             <Text style={{ marginTop: 20, fontSize: 15, color: COLORS.white }}>
-              {player?.position?.name}
+              {player?.position?.name ? player?.position?.name: "Midfielder"}
             </Text>
           </View>
           <View
@@ -39,7 +39,7 @@ export default function PlayersItem({ player }: any) {
           >
             <Image
               source={{
-                uri: player.image_path,
+                uri: player?.image_path,
               }}
               style={{
                 width: 60,
@@ -50,7 +50,7 @@ export default function PlayersItem({ player }: any) {
             />
             <Image
               source={{
-                uri: player.nationality.image_path,
+                uri: player?.nationality?.image_path,
               }}
               style={{
                 width: 20,
@@ -71,7 +71,7 @@ export default function PlayersItem({ player }: any) {
           </View>
           <View>
             <Text style={{ marginTop: 20, fontSize: 15, color: COLORS.white }}>
-              Dismiss
+              {player.date_of_birth}
             </Text>
           </View>
         </View>

@@ -15,7 +15,7 @@ import Matchs from "@/components/match";
 export default function Match() {
   return (
     <ImageBackground
-      source={require("@/assets/images/image.jpg")}
+      source={require("@/assets/images/logo/tiran.jpg")}
       style={{
         height: 950,
       }}
@@ -46,6 +46,7 @@ export default function Match() {
             display: "flex",
             flexDirection: "column",
             marginTop: 10,
+            width:"100%",
             marginBottom: 110,
           }}
         >

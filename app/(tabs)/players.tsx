@@ -1,10 +1,10 @@
 import Header from "@/components/Header";
 import PlayersI from "@/components/Player";
 import COLORS from "@/constants";
-// import ServicePlayer from "@/service/servicePlayer";
+import ServicePlayer from "@/services/servicePlayer";
 import { useEffect, useState } from "react";
 import { Text, View, ImageBackground, Image, ScrollView } from "react-native";
-import SearchPlayer from "@/components/Player";
+import SearchPlayer from "@/components/Player/Search";
 
 export default function Players() {
   return (

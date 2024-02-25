@@ -1,7 +1,7 @@
 import COLORS from "@/constants";
 import { Text, View, Image, ImageBackground, StyleSheet } from "react-native";
 
-export default function MatchLive({ match }: any) {
+export default function MatchLiveItem({ match }: any) {
   return (
     <View>
       <View
@@ -15,6 +15,7 @@ export default function MatchLive({ match }: any) {
           marginTop: 10,
           overflow: "hidden",
           borderColor:COLORS.white,
+          backgroundColor:COLORS.greyDark,
           borderWidth:1,
           borderRadius: 10,
         }}

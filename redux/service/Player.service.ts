@@ -1,6 +1,6 @@
-import { ApiSuccer } from "../api/api";
-export const authApi = ApiSuccer.injectEndpoints({
-  endpoints: (builder:any) => ({
+import { ApiFootball } from "../api/api";
+export const authApi = ApiFootball.injectEndpoints({
+  endpoints: (builder) => ({
     Players: builder.query({
       query: () => ({
         url: `players?include=nationality;position`,
@@ -8,7 +8,7 @@ export const authApi = ApiSuccer.injectEndpoints({
       }),
     }),
     search: builder.query({
-      query: (query:any) => ({
+      query: (query) => ({
         url: `players/search/${query}?include=nationality;position`,
         method: "GET",
       }),

@@ -12,7 +12,7 @@ export default function two() {
       <View>
         <Header />
       </View>
-      <ImageBackground source={require("@/assets/images/image.jpg")}
+      <ImageBackground source={require("@/assets/images/logo/ligue5.webp")}
       style={{
         height: 950,
       }}>
